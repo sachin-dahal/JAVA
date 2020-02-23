@@ -27,6 +27,7 @@ public class GuiPract
         p.setBackground(Color.yellow);
         
         b = new JButton("Button");
+        b.setBounds(50,100,80,30);
         
         l = new JLabel("This is label.");
         
