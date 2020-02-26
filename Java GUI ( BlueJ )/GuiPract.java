@@ -1,6 +1,11 @@
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+
+import java.awt.Color;
+import java.awt.Event.*;
 
 public class GuiPract
 {
@@ -16,26 +21,28 @@ public class GuiPract
     }
     
     public void gui(){
-    
+        
+        // f.setLayout(null);
         f = new JFrame("Java Practice");
         f.setVisible(true);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setSize(500,500);
+        f.setBounds(100,100,500,500);
+        // f.setResizable(false);
         
         
-        p = new JPanel();
-        p.setBackground(Color.yellow);
+        // p = new JPanel();
+        f.setBackground(Color.yellow);
         
         b = new JButton("Button");
-        b.setBounds(50,100,80,30);
+        b.setBounds(100,300,80,30);
         
         l = new JLabel("This is label.");
         
         
-        f.add(p);
+        // f.add(p);
         
-        p.add(b);
-        p.add(l);
+        f.add(b);
+        f.add(l);
         
     }
     
