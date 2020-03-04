@@ -2,16 +2,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class FirstGui
+public class FirstRandomGui
 {
-    
-    private JFrame f;
-    private JPanel p;
-    private JButton b;
-    private JLabel l;
-    
-    
-    public FirstGui(){
+    public FirstRandomGui(){
     
         gui();
     }
@@ -19,17 +12,17 @@ public class FirstGui
     
     public void gui(){
     
-        f = new JFrame("First Java GUI");
+        JFrame f = new JFrame("First Java GUI");
         f.setVisible(true);
         f.setSize(500,500);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        p = new JPanel();
+        JPanel p = new JPanel();
         p.setBackground(Color.YELLOW);
         
-        b = new JButton("Button");
+        JButton b = new JButton("Button");
         
-        l = new JLabel("This is Label.");
+        JLabel l = new JLabel("This is Label.");
         
         p.add(b); // adding button in panel
         p.add(l); // adding label in panel
@@ -41,6 +34,6 @@ public class FirstGui
     
     public static void main(String[] args){
     
-        new FirstGui();
+        new FirstRandomGui();
     }
 }
